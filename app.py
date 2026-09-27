@@ -12,7 +12,7 @@ from facenet_pytorch import MTCNN
 st.title("Live AI Mood Detector")
 st.write("Real-time emotion tracking powered by PyTorch.")
 
-# Cache models to prevent reloading on every frame
+# Cache models to prevent reloading on every frame(EG)
 @st.cache_resource
 def load_models():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
